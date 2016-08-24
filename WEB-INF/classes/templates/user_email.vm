@@ -1,0 +1,36 @@
+<p style = "display:inline;"> Dear ${quotation.getRequestorName()},</p>
+
+<div class="container">
+<p>Thank you for contacting us at The Talent Club.</p><br>
+<p>This is to confirm that we have received your interest.<p><br>
+
+
+<h3 style = "display:inline;">Quotation requested for:</h3><h3>${artist.getFirstName()} ${artist.getLastName()}</h3>
+<p> The artist details are mentioned below: </p>
+<br>
+<table style="align:center;border:2px;">
+<tr>
+<td><p style = "display:inline;">Artist Description :</p></td>
+<td>${artist.getDescription()}</td>
+</tr>
+
+<tr>
+<td><p style = "display:inline;">Artist Skill Set:</p> </td>
+<td>${artist.getSkillSet()}</td>
+</tr>
+
+<tr>
+<td><p style = "display:inline;">Artist Description</p></td>
+<td>${artist.getDescription()}</td>
+</tr>
+
+</table>
+
+<div>
+
+<br><p>Thank you for your interest, we will get back to you with further details.</p>
+
+<p>For any queries or assistance, feel free to <a href="mailto:contact@thetalentclub.in">Contact Us</a> or call us on 9987945957</p>
+<p> Visit our website at: <a href="www.thetalentclub.in">TheTalentClub</a></p>
+<p>With Regards!</p>
+<p>TheTalentClub Team</p>

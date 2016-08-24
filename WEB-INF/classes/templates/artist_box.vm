@@ -1,0 +1,31 @@
+<div class="col-xs-12 col-sm-6 col-md-4" id="artist-id-${artist.artistId}">
+	<div class="thumbnail border-shadow">								
+		<div class="artist-profile-wrapper">
+			<div class="artist-name-wrapper" itemprop="name">
+				<span class="artist-name-span truncate" data-toggle="tooltip" data-placement="auto" title="${artist.firstName} ${artist.lastName}">${artist.firstName} ${artist.lastName}</span>
+			</div>
+	
+			<div class="artist-detail-wrapper">
+				<div class="flR price-indicator">
+					#foreach ($priceCounter in [1..5])	
+					#if ($priceCounter <= ${artist.priceIndicator})											 	
+					<span class="fa fa-rupee fa fa-1x price-indicator-color"></span>
+					#else
+					<span class="fa fa-rupee fa fa-1x" ></span>
+					#end	
+					#end	
+				</div>
+				<div class="iLB"><span class="skill-set">${artist.skillSet}</span></div>
+			</div>
+		</div>
+
+		<div class="separator image-separator"><!-- --></div>
+		<a href="${uiContextPath}/artist/profile?artistId=${artist.artistId}" class="" data-holder-rendered="true">										
+			<img data-src="holder.js/100%x180" alt="No Photo" src="${restServiceContext}/image/${artist.profilePhoto.uri}" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"/>						
+		</a>
+		<div class="separator image-separator"><!-- --></div>
+		<div class="artist-action">
+			<button class="btn btn-danger quotationForm" data-artistId="${artist.artistId}" data-artistName="${artist.firstName} ${artist.lastName}" data-toggle="modal" data-target="#myModal">Request for quote</button>
+		</div>
+	</div>
+</div>

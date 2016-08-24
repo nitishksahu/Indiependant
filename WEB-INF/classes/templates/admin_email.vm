@@ -1,0 +1,79 @@
+<h2 style = "display:inline;"> Dear Admin, </h2>
+
+<h1>A New Quotation Has Been Requested.<h1><br>
+
+<h4> Please get the details mentioned below and proceed accordingly. </h4>
+
+<div class="container" style="background-color:aliceblue;">
+<table style="border:2px;">
+<tr>
+<th colspan="2"><h2>Client Details</h2><th>
+</tr>
+
+<tr>
+<td><h3 style = "display:inline;">Client Name:</h3></td>
+<td><h3>${quotation.getRequestorName()}</h3></td>
+</tr>
+
+<tr>
+<td><h3 style = "display:inline;">Client Email:</h3></td>
+<td><h3>${quotation.getRequestorEmail()}</h3></td>
+</tr>
+
+<tr>
+<td><h3 style = "display:inline;">Client Phone:</h3></td>
+<td><h3>${quotation.getRequestorPhone()}<h3></td>
+</tr>
+
+<tr>
+<td><h3 style = "display:inline;">Requested Location:</h3></td>
+<td><h3>${quotation.getEventLocation()}<h3></td>
+</tr>
+</table>
+
+<br/><br/>
+
+<table>
+<tr>
+<th colspan="2"><h3>Artist Details</h3><th>
+</tr>
+
+<tr>
+<td><h3 style = "display:inline;">Artist Name:</h3></td>
+<td> <h3>${artist.getFirstName()}  ${artist.getLastName()}</h3></td>
+</tr>
+
+<tr>
+<td><h3 style = "display:inline;">Email Address:</h3></td>
+<td><h3>${artist.getEmail()}</h3></td>
+</tr>
+
+<tr>
+<td><h3 style = "display:inline;">Artist Description:</h3></td>
+<td><h3>${artist.getDescription()}</h3></td>
+</tr>
+
+<tr>
+<td><h3 style = "display:inline;">Artist PhoneNo:</h3></td>
+<td><h3>${artist.getPhone()}</h3></td>
+</tr>
+
+<tr>
+<td><h3 style = "display:inline;">Artist Budget Range:</h3></td>
+<td><h3>${artist.getFeeLower()} - ${artist.getFeeUpper()}</h3></td>
+</tr>
+
+<tr>
+<th><h3 style = "display:inline;">Artist Skill Set:</h3> </th>
+<td><h3>${artist.getSkillSet()}</h3></td>
+</tr>
+
+
+</table>
+</div>
+
+<br> 
+<br>
+
+<h6>With Regards!</h6>
+<h6>TalentClub Team</h6>
